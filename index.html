@@ -99,9 +99,9 @@
           </div>
           <div class="slider">
             <div><img src="img/slider/IMG_8130.JPG" ></div>
-            <div><img src="img/slider/IMG_8131.JPG"</div>
-            <div><img src="img/slider/IMG_8125.JPG"</div>
-            <div><img src="img/slider/18de35af-3ca4-4178-a7b1-c0d233b78522.JPG"</div>
+            <div><img src="img/slider/IMG_8131.JPG"></div>
+            <div><img src="img/slider/IMG_8125.JPG"></div>
+            <div><img src="img/slider/18de35af-3ca4-4178-a7b1-c0d233b78522.JPG">/div>
           </div>
         </div>
       </div>
@@ -128,6 +128,38 @@
     }
     .slider img{
       max-width: 100%;
+    }
+    .slick-dots{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+    }
+    .slick-dots li{
+      display: inline-block;
+    }
+    .slick-dots li button{
+      outline: none;
+      display: inline-block;
+      background-color: transparent;
+      border-width: 0;
+    }
+    .slick-dots li button span{
+      display: none;
+    }
+    .slick-dots li button:before{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      content: '';
+      background-color: #ffffff;
+    }
+    .slick-dots li.slick-active button:before{
+      background-color: #000000;
     }
   </style>
 
