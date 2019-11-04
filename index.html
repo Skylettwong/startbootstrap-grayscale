@@ -125,20 +125,24 @@
   </section>
 
   <style>
-    .project-slider{
-      height: 100%;
-    }
-    .slick-list{
-      height: 100%;
-    }
-    .project-slider .image-bg{
-      height: 100%;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+      .project-slider {
+        height: 100%;
+        min-height: 400px;
+      }
+      .project-slider .slick-list,
+      .project-slider .slick-track,
+      .project-slider .slick-slide,
+      .project-slider .slick-slide > div {
+        height: 100%;
+      }
+      .project-slider .image-bg {
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     </style>
-    
+  <style>
     .intro-section {
       padding: 10rem 0 0;
     }
@@ -307,51 +311,46 @@
 
       <!-- Project Three Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-          <div class="slider">
-          <div>img class="img-fluid src="img/demo-image-02.jpg" alt=""></div> 
-          <div>img class="img-fluid src="img/demo-image-01.jpg" alt=""></div>
+        <div class="col-lg-6">
+          <div class="slider project-slider">
+            <div class="image-bg" style="background-image:url(img/demo-image-02.jpg)" alt=""></div>
+            <div class="image-bg" style="background-image:url(img/demo-image-01.jpg)" alt=""></div>
           </div>
-
-          </img-fluid></div>
-          </div>
-            <img class="img-fluid" src="img/DSC00455-2.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Project3</h4>
-                  <p class="mb-0 text-white-50">Yoyoyo this is my third photograph which taken in HKDI</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Project3</h4>
+                <p class="mb-0 text-white-50">Yoyoyo this is my third photograph which taken in HKDI</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
         </div>
-  
-        <!-- Project Four Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-              <div class="slider">
-                  <div>img class="img-fluid src="img/demo-image-02.jpg" alt=""></div> 
-                  <div>img class="img-fluid src="img/demo-image-01.jpg" alt=""></div>
-                  </div>
+      </div>
 
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Project4</h4>
-                  <p class="mb-0 text-white-50">Hey here is my fourth photograph which taken in MongKok</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
+      <!-- Project Four Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <div class="slider project-slider">
+            <div class="image-bg" style="background-image:url(img/demo-image-02.jpg)" alt=""></div>
+            <div class="image-bg" style="background-image:url(img/demo-image-01.jpg)" alt=""></div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Project4</h4>
+                <p class="mb-0 text-white-50">Hey here is my fourth photograph which taken in MongKok</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
         </div>
-    
-
+      </div>
+    </div>
   </section>
 
   <!-- Signup Section -->
